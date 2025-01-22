@@ -43,7 +43,7 @@ Partial Class Form1
         cbxKopi = New CheckBox()
         cbxCoklat = New CheckBox()
         cbxMilo = New CheckBox()
-        DateTimePicker1 = New DateTimePicker()
+        dtpTarikh = New DateTimePicker()
         lblTarikh = New Label()
         dgvTable = New DataGridView()
         BtmCreate = New Button()
@@ -265,12 +265,12 @@ Partial Class Form1
         cbxMilo.Text = "MIlo"
         cbxMilo.UseVisualStyleBackColor = True
         ' 
-        ' DateTimePicker1
+        ' dtpTarikh
         ' 
-        DateTimePicker1.Location = New Point(838, 76)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(200, 23)
-        DateTimePicker1.TabIndex = 15
+        dtpTarikh.Location = New Point(838, 76)
+        dtpTarikh.Name = "dtpTarikh"
+        dtpTarikh.Size = New Size(200, 23)
+        dtpTarikh.TabIndex = 15
         ' 
         ' lblTarikh
         ' 
@@ -353,7 +353,7 @@ Partial Class Form1
         Controls.Add(BtmCreate)
         Controls.Add(dgvTable)
         Controls.Add(lblTarikh)
-        Controls.Add(DateTimePicker1)
+        Controls.Add(dtpTarikh)
         Controls.Add(gbxPerisa)
         Controls.Add(gbxKaedahBayaran)
         Controls.Add(gbxJantina)
@@ -400,7 +400,7 @@ Partial Class Form1
     Friend WithEvents cbxKopi As CheckBox
     Friend WithEvents cbxCoklat As CheckBox
     Friend WithEvents cbxMilo As CheckBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtpTarikh As DateTimePicker
     Friend WithEvents lblTarikh As Label
     Friend WithEvents dgvTable As DataGridView
     Friend WithEvents BtmCreate As Button
