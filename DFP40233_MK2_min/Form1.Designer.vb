@@ -46,7 +46,7 @@ Partial Class Form1
         dtpTarikh = New DateTimePicker()
         lblTarikh = New Label()
         dgvTable = New DataGridView()
-        BtmCreate = New Button()
+        BtnCreate = New Button()
         BtnRead = New Button()
         BtnUpdate = New Button()
         BtnDelete = New Button()
@@ -290,14 +290,14 @@ Partial Class Form1
         dgvTable.Size = New Size(341, 150)
         dgvTable.TabIndex = 17
         ' 
-        ' BtmCreate
+        ' BtnCreate
         ' 
-        BtmCreate.Location = New Point(617, 481)
-        BtmCreate.Name = "BtmCreate"
-        BtmCreate.Size = New Size(71, 36)
-        BtmCreate.TabIndex = 18
-        BtmCreate.Text = "Create"
-        BtmCreate.UseVisualStyleBackColor = True
+        BtnCreate.Location = New Point(617, 481)
+        BtnCreate.Name = "BtnCreate"
+        BtnCreate.Size = New Size(71, 36)
+        BtnCreate.TabIndex = 18
+        BtnCreate.Text = "Create"
+        BtnCreate.UseVisualStyleBackColor = True
         ' 
         ' BtnRead
         ' 
@@ -350,7 +350,7 @@ Partial Class Form1
         Controls.Add(BtnDelete)
         Controls.Add(BtnUpdate)
         Controls.Add(BtnRead)
-        Controls.Add(BtmCreate)
+        Controls.Add(BtnCreate)
         Controls.Add(dgvTable)
         Controls.Add(lblTarikh)
         Controls.Add(dtpTarikh)
@@ -403,7 +403,7 @@ Partial Class Form1
     Friend WithEvents dtpTarikh As DateTimePicker
     Friend WithEvents lblTarikh As Label
     Friend WithEvents dgvTable As DataGridView
-    Friend WithEvents BtmCreate As Button
+    Friend WithEvents BtnCreate As Button
     Friend WithEvents BtnRead As Button
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnDelete As Button
