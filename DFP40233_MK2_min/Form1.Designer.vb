@@ -45,18 +45,18 @@ Partial Class Form1
         cbxMilo = New CheckBox()
         DateTimePicker1 = New DateTimePicker()
         lblTarikh = New Label()
-        DataGridView1 = New DataGridView()
-        Bil = New DataGridViewTextBoxColumn()
-        Nama = New DataGridViewTextBoxColumn()
-        NoTel = New DataGridViewTextBoxColumn()
+        dgvTable = New DataGridView()
         BtmCreate = New Button()
         BtnRead = New Button()
         BtnUpdate = New Button()
         BtnDelete = New Button()
+        clmBil = New DataGridViewTextBoxColumn()
+        clmNama = New DataGridViewTextBoxColumn()
+        clmNoTel = New DataGridViewTextBoxColumn()
         gbxJantina.SuspendLayout()
         gbxKaedahBayaran.SuspendLayout()
         gbxPerisa.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvTable, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' lblMaklumatPelanggan
@@ -281,29 +281,14 @@ Partial Class Form1
         lblTarikh.TabIndex = 16
         lblTarikh.Text = "Tarikh"
         ' 
-        ' DataGridView1
+        ' dgvTable
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Bil, Nama, NoTel})
-        DataGridView1.Location = New Point(707, 166)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(341, 150)
-        DataGridView1.TabIndex = 17
-        ' 
-        ' Bil
-        ' 
-        Bil.HeaderText = "Bil"
-        Bil.Name = "Bil"
-        ' 
-        ' Nama
-        ' 
-        Nama.HeaderText = "Nama"
-        Nama.Name = "Nama"
-        ' 
-        ' NoTel
-        ' 
-        NoTel.HeaderText = "No.Tel"
-        NoTel.Name = "NoTel"
+        dgvTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvTable.Columns.AddRange(New DataGridViewColumn() {clmBil, clmNama, clmNoTel})
+        dgvTable.Location = New Point(707, 166)
+        dgvTable.Name = "dgvTable"
+        dgvTable.Size = New Size(341, 150)
+        dgvTable.TabIndex = 17
         ' 
         ' BtmCreate
         ' 
@@ -341,6 +326,21 @@ Partial Class Form1
         BtnDelete.Text = "Delete"
         BtnDelete.UseVisualStyleBackColor = True
         ' 
+        ' clmBil
+        ' 
+        clmBil.HeaderText = "Bil"
+        clmBil.Name = "clmBil"
+        ' 
+        ' clmNama
+        ' 
+        clmNama.HeaderText = "Nama"
+        clmNama.Name = "clmNama"
+        ' 
+        ' clmNoTel
+        ' 
+        clmNoTel.HeaderText = "No.Tel"
+        clmNoTel.Name = "clmNoTel"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -351,7 +351,7 @@ Partial Class Form1
         Controls.Add(BtnUpdate)
         Controls.Add(BtnRead)
         Controls.Add(BtmCreate)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvTable)
         Controls.Add(lblTarikh)
         Controls.Add(DateTimePicker1)
         Controls.Add(gbxPerisa)
@@ -374,7 +374,7 @@ Partial Class Form1
         gbxKaedahBayaran.PerformLayout()
         gbxPerisa.ResumeLayout(False)
         gbxPerisa.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvTable, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -402,13 +402,13 @@ Partial Class Form1
     Friend WithEvents cbxMilo As CheckBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents lblTarikh As Label
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Bil As DataGridViewTextBoxColumn
-    Friend WithEvents Nama As DataGridViewTextBoxColumn
-    Friend WithEvents NoTel As DataGridViewTextBoxColumn
+    Friend WithEvents dgvTable As DataGridView
     Friend WithEvents BtmCreate As Button
     Friend WithEvents BtnRead As Button
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnDelete As Button
+    Friend WithEvents clmBil As DataGridViewTextBoxColumn
+    Friend WithEvents clmNama As DataGridViewTextBoxColumn
+    Friend WithEvents clmNoTel As DataGridViewTextBoxColumn
 
 End Class
