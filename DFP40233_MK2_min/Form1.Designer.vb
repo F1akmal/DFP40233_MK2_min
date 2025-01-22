@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        txtMaklumatPelanggan = New Label()
+        lblMaklumatPelanggan = New Label()
         lblNama = New Label()
         lblNoTel = New Label()
         lblAlamat = New Label()
@@ -59,15 +59,15 @@ Partial Class Form1
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' txtMaklumatPelanggan
+        ' lblMaklumatPelanggan
         ' 
-        txtMaklumatPelanggan.AutoSize = True
-        txtMaklumatPelanggan.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0)
-        txtMaklumatPelanggan.Location = New Point(317, 9)
-        txtMaklumatPelanggan.Name = "txtMaklumatPelanggan"
-        txtMaklumatPelanggan.Size = New Size(252, 30)
-        txtMaklumatPelanggan.TabIndex = 0
-        txtMaklumatPelanggan.Text = "MAKLUMAT PELANGGAN"
+        lblMaklumatPelanggan.AutoSize = True
+        lblMaklumatPelanggan.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblMaklumatPelanggan.Location = New Point(317, 9)
+        lblMaklumatPelanggan.Name = "lblMaklumatPelanggan"
+        lblMaklumatPelanggan.Size = New Size(252, 30)
+        lblMaklumatPelanggan.TabIndex = 0
+        lblMaklumatPelanggan.Text = "MAKLUMAT PELANGGAN"
         ' 
         ' lblNama
         ' 
@@ -267,7 +267,7 @@ Partial Class Form1
         ' 
         ' DateTimePicker1
         ' 
-        DateTimePicker1.Location = New Point(841, 235)
+        DateTimePicker1.Location = New Point(838, 76)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(200, 23)
         DateTimePicker1.TabIndex = 15
@@ -275,7 +275,7 @@ Partial Class Form1
         ' lblTarikh
         ' 
         lblTarikh.AutoSize = True
-        lblTarikh.Location = New Point(739, 243)
+        lblTarikh.Location = New Point(736, 84)
         lblTarikh.Name = "lblTarikh"
         lblTarikh.Size = New Size(38, 15)
         lblTarikh.TabIndex = 16
@@ -285,7 +285,7 @@ Partial Class Form1
         ' 
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {Bil, Nama, NoTel})
-        DataGridView1.Location = New Point(710, 325)
+        DataGridView1.Location = New Point(707, 166)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.Size = New Size(341, 150)
         DataGridView1.TabIndex = 17
@@ -307,7 +307,7 @@ Partial Class Form1
         ' 
         ' BtmCreate
         ' 
-        BtmCreate.Location = New Point(401, 635)
+        BtmCreate.Location = New Point(617, 481)
         BtmCreate.Name = "BtmCreate"
         BtmCreate.Size = New Size(71, 36)
         BtmCreate.TabIndex = 18
@@ -316,7 +316,7 @@ Partial Class Form1
         ' 
         ' BtnRead
         ' 
-        BtnRead.Location = New Point(535, 625)
+        BtnRead.Location = New Point(736, 481)
         BtnRead.Name = "BtnRead"
         BtnRead.Size = New Size(71, 36)
         BtnRead.TabIndex = 19
@@ -325,7 +325,7 @@ Partial Class Form1
         ' 
         ' BtnUpdate
         ' 
-        BtnUpdate.Location = New Point(672, 625)
+        BtnUpdate.Location = New Point(868, 481)
         BtnUpdate.Name = "BtnUpdate"
         BtnUpdate.Size = New Size(71, 36)
         BtnUpdate.TabIndex = 20
@@ -334,7 +334,7 @@ Partial Class Form1
         ' 
         ' BtnDelete
         ' 
-        BtnDelete.Location = New Point(823, 635)
+        BtnDelete.Location = New Point(1002, 481)
         BtnDelete.Name = "BtnDelete"
         BtnDelete.Size = New Size(71, 36)
         BtnDelete.TabIndex = 21
@@ -343,8 +343,9 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ActiveCaption
         ClientSize = New Size(1102, 770)
         Controls.Add(BtnDelete)
         Controls.Add(BtnUpdate)
@@ -364,7 +365,7 @@ Partial Class Form1
         Controls.Add(lblAlamat)
         Controls.Add(lblNoTel)
         Controls.Add(lblNama)
-        Controls.Add(txtMaklumatPelanggan)
+        Controls.Add(lblMaklumatPelanggan)
         Name = "Form1"
         Text = "Form1"
         gbxJantina.ResumeLayout(False)
@@ -378,7 +379,7 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents txtMaklumatPelanggan As Label
+    Friend WithEvents lblMaklumatPelanggan As Label
     Friend WithEvents lblNama As Label
     Friend WithEvents lblNoTel As Label
     Friend WithEvents lblAlamat As Label
